@@ -1,0 +1,108 @@
+
+
+
+
+
+.FormTitle {
+    margin-bottom: 20px;
+    font-family: robo2;
+}
+
+.Apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.box {
+  border: 2px solid #eee9e9fc;
+  padding: 40px 50px 20px 50px;
+  height: 500px;
+  text-align: center;
+  max-width: 350px;
+  background-color: transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgb(196, 193, 193);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding-top: 9%;
+  margin: auto;
+  
+}
+.box2{
+    border-radius: 25px;
+  box-shadow: 0 0 20px rgb(196, 193, 193);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  height: 30px;
+  margin: 30px 10%;
+  /* border: #eee9e9fc; */
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 5px 20px;
+  color: #eee9e9fc ;
+  font-size: small;
+  background-color:#f8961e;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+
+
+.inputInside {
+    background: transparent;
+    border: none;
+    outline:none;
+    color: #eee9e9fc;
+}
+
+.input-box {
+    border-bottom: 3px solid #eee9e9fc;
+}
+
+.inputInside::placeholder {
+    color: #eee9e9fc;
+    font-size: small;
+}
+
+.forgotLink  a {
+    color: aliceblue;
+    border-radius: 20px;
+
+}
+.forgotLink  .link1{
+    color: rgb(211, 14, 17);
+    border-radius: 20px;
+    margin-right: 13px;
+}
+
+
+
+
+.checkboxText {
+    color: #eee9e9fc;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.checkboxText input {
+    margin-right: 10px;
+}
+
+
+h1{
+    font-family: f3;
+}

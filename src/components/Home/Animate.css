@@ -1,0 +1,165 @@
+@font-face {
+    font-family: f1;
+    src: url('../assets/fonts/ROBMAX36-Demo-BF64dd65910503b.otf');
+}
+
+@font-face {
+    font-family: f2;
+    src: url('../assets/fonts/AzureoN.ttf');
+}
+
+@font-face {
+    font-family: f3;
+    src: url('../assets/fonts/Megatrans-Regular-BF64e042c317003.otf');
+}
+
+@font-face {
+    font-family: f4;
+    src: url('../assets/fonts/FranchiseFilled.ttf');
+}
+
+
+@font-face {
+    font-family: social;
+    src: url('../assets/fonts/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: future;
+    src: url('../assets/fonts/astro-astro-regular-400.ttf');
+}
+
+@font-face {
+    font-family: futuretext;
+    src: url('../assets/fonts/astro-astro-regular-400.ttf');
+}
+
+
+@font-face {
+    font-family: retro;
+    src: url('../assets/fonts/mexcellent\ rg.otf');
+}
+
+
+@font-face {
+    font-family: retro2;
+    src: url('../assets/fonts/budmo\ jiggler.otf');
+}
+
+@font-face {
+    font-family: pacFont;
+    src: url('../assets/fonts/PAC-FONT.TTF');
+}
+@font-face {
+    font-family: nayaFont;
+    src: url('../assets/fonts/DMSerifDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: robo;
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: robo2;
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+
+
+
+
+@keyframes animate {
+    0%,
+    80% {
+      color: #333;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffffff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+        0 0 120px #fff;
+    }
+  }
+
+
+.para{
+    font-family: robo2;
+}
+
+
+.custom{
+    font-family: sans-serif;
+}
+
+
+.heading{
+    font-family: retro2;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+
+ .SonaHeading{
+    font-family: nayaFont;
+ }
+
+ .cosplayHeading{
+    font-family: future;
+    color: #333;
+ }
+
+ .cosplayText{
+    font-family: futuretext;
+    color: white;
+ }
+
+ .cosplayHeading{
+    animation: animate 1s linear infinite;
+    /* animation: animate 3s forwards; */
+  }
+
+
+  .rocket {
+    position: absolute;
+    bottom: -600px;
+    animation: fly 10s .5s  linear infinite;
+}
+
+
+.singerHead{
+    font-family: robo;
+}
+.singerHeader{
+    font-family: robo2;
+}
+
+@keyframes fly {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+.hobbyText{
+
+    font-family: pacFont;
+    font-weight: 100;
+    
+}
+
+.footHead{
+    font-family: robo2;
+    color: white;
+}
+
+.footer p{
+    font-family: robo;
+    color: #7fffd4;
+}

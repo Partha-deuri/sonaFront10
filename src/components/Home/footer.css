@@ -1,0 +1,36 @@
+@font-face {
+    font-family: f1;
+    src: url('../assets/fonts/ROBMAX36-Demo-BF64dd65910503b.otf');
+}
+
+@font-face {
+    font-family: f2;
+    src: url('../assets/fonts/AzureoN.ttf');
+}
+
+@font-face {
+    font-family: f3;
+    src: url('../assets/fonts/Megatrans-Regular-BF64e042c317003.otf');
+}
+
+@font-face {
+    font-family: f4;
+    src: url('../assets/fonts/FranchiseFilled.ttf');
+}
+
+
+@font-face {
+    font-family: f5;
+    src: url('../assets/fonts/PressStart2P-Regular.ttf');
+}
+
+
+
+h2{
+    font-family: f4;
+}
+
+p{
+    font-family: f3;
+    
+}

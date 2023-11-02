@@ -1,0 +1,21 @@
+@font-face {
+    font-family: f1;
+    src: url('../assets/fonts/ROBMAX36-Demo-BF64dd65910503b.otf');
+}
+
+@font-face {
+    font-family: f2;
+    src: url('../assets/fonts/AzureoN.ttf');
+}
+
+@font-face {
+    font-family: f3;
+    src: url('../assets/fonts/Megatrans-Regular-BF64e042c317003.otf');
+}
+
+
+h1{
+font-family: f2;
+
+
+}
