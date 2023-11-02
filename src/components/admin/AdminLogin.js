@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { loginValidation } from '../helper/validate';
 import { adminLogin } from '../helper/axiosHelper';
 import toast, { Toaster } from 'react-hot-toast';
+import { useState } from 'react';
+import { UilEyeSlash } from '@iconscout/react-unicons'
+import { UilEye } from '@iconscout/react-unicons'
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -39,6 +42,21 @@ const AdminLogin = () => {
       })
     }
   })
+
+  const [textType, setText] = useState("password")
+
+  const changeEye = (task) => {
+      if (task === "show") {
+          document.getElementById('hidden').style.display = "none";
+          document.getElementById('show').style.display = "block";
+          setText("text")
+      } else {
+          document.getElementById('show').style.display = "none";
+          document.getElementById('hidden').style.display = "block";
+          setText("password")
+      }
+
+  }
   return (
     <div className='flex flex-col items-center text-white'>
       <Toaster position='top-center' reverseOrder={false}></Toaster>
@@ -51,8 +69,12 @@ const AdminLogin = () => {
         <div className='border-2 min-w-full rounded-sm'>
           <input {...formik.getFieldProps('email')} className='min-w-full outline-none px-1' type="email" placeholder='Email' />
         </div>
-        <div className='border-2 min-w-full rounded-sm '>
-          <input {...formik.getFieldProps('password')} className='min-w-full outline-none px-1' type="password" placeholder='Password' />
+        <div className='border-2 min-w-full rounded-sm flex'>
+          <input {...formik.getFieldProps('password')} className='min-w-fit outline-none px-1' type={textType} placeholder='Password' />
+          <div className='bg-white'>
+                        <UilEye id="show" className="text-black hidden cursor-pointer z-5" onClick={() => { changeEye("hide") }} />
+                        <UilEyeSlash className="text-black cursor-pointer z-5" id="hidden" onClick={() => { changeEye("show") }} />
+                    </div>
         </div>
         <div className='flex border-2 px-2 max-w-fit'>
           <button className='text-center'>Login</button>
