@@ -41,6 +41,9 @@ import AdminClubs from './components/admin/AdminClubs';
 import AdminCosplay from './components/admin/AdminCosplay';
 import AdminSona from './components/admin/AdminSona';
 import AdminAllUsers from './components/admin/AdminAllUsers';
+import ModVerify from './components/mod/ModVerify';
+import ModEvents from './components/mod/ModEvents';
+import ModUsers from './components/mod/ModUsers';
 
 
 
@@ -106,8 +109,20 @@ function App() {
       path: "/admin/clubs/:event/:users",
       element: <AdminEventUserList />
     },
-
-
+    
+    // mods
+    {
+      path: "/mod",
+      element: <ModVerify />
+    },
+    {
+      path: "/mod/events",
+      element: <ModEvents />
+    },
+    {
+      path: "/mod/events/:list",
+      element: <ModUsers />
+    },
 
     {
       path: "*",
