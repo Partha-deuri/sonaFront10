@@ -73,7 +73,7 @@ const Preview = (props) => {
                 }
             }
         }else{
-            toast.error("All the slots are filled");
+            toast.error("No more registration are accepted.");
         }
 
     }
@@ -108,7 +108,7 @@ const Preview = (props) => {
                         <button
                             onClick={() => registerEvent({ currEvent: props.title, clubName: props.clubName })}
                             className="rounded-full bg-neutral-900 py-3 mt-5 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
-                            {isRegistered(props.title) ? 'Unregister' : slots ? 'Register' : 'No Slots Left'}
+                            {isRegistered(props.title) ? 'Unregister' : slots ? 'Register' : 'Registrations are closed'}
                         </button>
 
                     </div>
