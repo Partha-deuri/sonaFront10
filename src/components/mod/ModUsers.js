@@ -98,7 +98,7 @@ const ModUsers = () => {
                     </>
                     : <h2 className='text-center'>No one registered</h2>
             }
-            <div className='text-center border-2 my-10' onClick={() => {
+            <div className='text-center border-2 my-10 cursor-pointer' onClick={() => {
                 logOutAll(); navigate('/mod')
             }}
             >
