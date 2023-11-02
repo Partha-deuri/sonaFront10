@@ -13,36 +13,98 @@ import Preview from './Preview'
 const cards = [
   {
     id: 1,
-    title: "Spot Photography",
+    title: "Real to Reel",
     image: v1,
-    text: "",
+    text:<>
+      <h3>** For any further queries contact 8822078464 (Uddipan Bhattacharjee) **</h3>
+      </>,
 
   },
   {
     id: 2,
-    title: "Landscape Photography",
+    title: "Advertisement",
     image: v2,
-    text: "",
+    text: <><h3>Rules:</h3>
+      <br></br>1. Don’t Produce an advertisement that’s already out. 
+      <br></br>2. Your product should be genuine and innovative and comply with the theme.
+      <br></br>3.  Video Length should not exceed 3 mins.
+      <br></br>4. Minimum of 4 members.
+      <br></br>5. Maximum of 8 members
+      <br></br>6.  No explicit content is allowed.
+      <br></br>7. One video from each block is required.
+
+      <br/>
+
+       <h3>Points:</h3>
+      <br></br>1st : 70 points
+      <br></br>2nd: 50 points
+      <br></br>3rd : 30 points
+      <br></br>
+      <h3>Negative points: -50</h3>
+ </>,
   },
   {
     id: 3,
-    title: "Long Exposure",
+    title: "Music Video",
     image: v3,
-    text: "",
+    text: <><h3>Rules:</h3> <br></br>1. Should not exceed a length of 5 min 
+      <br></br>2. Minimum of 4 and  Maximum of 10 Members respectively 
+<br></br>3. No explicit Content Allowed<br></br>
+  <br></br>4. Song of Any Language is allowed <br></br>
+  5. One Video from each Block is Required.
+  <br></br>
+  <br></br>
+  <h3>Points:</h3>
+  <br></br>1st : 100 points
+  <br></br>2nd: 70 points
+  <br></br>3rd : 50 points
+  <br></br>
+   <h3>Negative points: -70</h3>
+ </>,
   },
   {
     id: 4,
-    title: "Macro Photography",
+    title: "Trailer Parody",
     image: v4,
     url: "#",
-    text: "",
+    text: <><h3>Rules:</h3> <br></br>1. It should parody the existing trailer 
+      <br></br>2. The parody can be of any Language
+      <br></br>3. Minimum of 6 members
+      <br></br>4. Maximum of 16 members 
+      <br></br>5. No explicit content is allowed.
+      <br></br>6. One video from each block is required
+      <br></br>
+       <h3>Points:</h3>
+      <br></br>1st : 70 points
+      <br></br>2nd: 50 points
+      <br></br>3rd : 30 points
+      <br></br>
+      <h3>Negative points: -40</h3>
+ </>,
   },
   {
     id: 5,
-    title: "Street Photography",
+    title: "Documentary",
     image: v5,
     url: "#",
-    text: "",
+    text: <><h3>Rules:</h3> <br></br>1. time limit is 8 to 15 min. 25 negative for the 1st exceeding limit and 15 for each next exceeding minute
+      <br></br>2. . The number of members should be 6 to 14.
+      <br></br>3.The documentary should have content that tells the facts about actual people or any true event or any social or scientific topic that affects society.
+      <br></br>4.If the subject of the documentary is a personality, then that person should be
+              respectful in society. The content should be based on a true story however some extra
+              dialogue can be added to make it interesting, but the characters must be from a true
+                  story.
+      <br></br>5. The video should not contain any clip from an online source, everything must be recorded manually. The video will be disqualified if this instruction is not followed.
+
+     
+      <br></br>
+       <h3>Points:</h3>
+      <br></br>1st : 70 points
+      <br></br>2nd: 50 points
+      <br></br>3rd : 30 points
+      <br></br>
+      <h3>Negative points: -20</h3>
+ </>,
   },
 ]
 
