@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 // const jwt_decode = require('jwt-decode');
 
 // axios.defaults.baseURL = 'http://localhost:5000/';
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000/';
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL ;
 
 
 export async function wakeupServer() { 
