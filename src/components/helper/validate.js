@@ -28,6 +28,16 @@ export async function registerValidation(values) {
 
     return errors;
 }
+export async function modValidation(values){
+    const errors = {}
+    if(values.clubname ===""){
+        errors.clubname = toast.error("Enter clubname appropriately")
+    }
+    if(values.secretKey===""){
+        errors.secretKey = toast.error("Enter secretKey appropriately")
+    }
+    return errors;
+}
 /** validate login form */
 export async function loginValidation(values) {
     const errors = emailVerify({}, values);

@@ -4,10 +4,10 @@ import toast from 'react-hot-toast';
 // const jwt_decode = require('jwt-decode');
 
 // axios.defaults.baseURL = 'http://localhost:5000/';
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000/';
 
 
-export async function wakeupServer() {
+export async function wakeupServer() { 
     try {
         return await axios.get('/');
     } catch (err) {
@@ -262,6 +262,50 @@ export async function getUserEvents(token) {
     } catch (err) {
         toast.error("session expired")
         localStorage.clear();
+    }
+}
+// mods
+export async function modLogin({clubName, secretKey}){
+    try{
+        const {status, data } = await axios.post('/api/mod/verify',{clubName,secretKey});
+        // console.log(data,"helper");
+        if(status===201){
+            return Promise.resolve(data);
+        }
+        return Promise.reject();
+    }catch(err){
+        return Promise.reject(err);
+    }
+}
+
+export async function modGetEvents(){
+    try{
+        const token = localStorage.getItem("token");
+        const { data } = await axios.get('/api/mod/club', { headers: { "Authorization": `Bearer ${token}` } });
+        return Promise.resolve({ data });
+    }catch(err){
+        return Promise.reject(err);
+    }
+}
+export async function modGetUsers({event}){
+    try{
+        const token = localStorage.getItem("token");
+        const { data } = await axios.get(`/api/mod/club/${event}`, { headers: { "Authorization": `Bearer ${token}` } });
+        return Promise.resolve({ data });
+    }catch(err){
+        return Promise.reject(err);
+    }
+}
+
+export async function modAllUser() {
+    try {
+        const token = localStorage.getItem('token');
+
+        const { data } = await axios.get('/api/mod/alluser', { headers: { "Authorization": `Bearer ${token}` } });
+
+        return Promise.resolve({ data });
+    } catch (err) {
+        return Promise.reject({ error: err });
     }
 }
 
