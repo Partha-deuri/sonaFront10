@@ -68,21 +68,27 @@ const ModVerify = () => {
                     Incharges Login Page
                 </strong>
             </h1>
-            <form className=' flex flex-col mt-20 items-center border-4 p-[10rem] gap-10 text-black ' onSubmit={formik.handleSubmit}>
-                <div className='border-2 min-w-full rounded-sm'>
-                    <input {...formik.getFieldProps('clubName')} className='min-w-full outline-none px-1' type="text" placeholder='Club Name' />
-                </div>
-                <div className='border-2 min-w-full rounded-sm flex'>
-                    <input {...formik.getFieldProps('secretKey')} className='min-w-fit outline-none px-1 ' type={textType} placeholder='SecretKey' />
-                    <div className='bg-white'>
-                        <UilEye id="show" className="text-black hidden cursor-pointer" onClick={() => { changeEye("hide") }} />
-                        <UilEyeSlash className="text-black cursor-pointer " id="hidden" onClick={() => { changeEye("show") }} />
+            <div className='border-4'>
+                <form className=' flex flex-col mt-20 items-center  p-[10rem] gap-10 text-black ' onSubmit={formik.handleSubmit}>
+                    <div className='border-2 min-w-full rounded-sm'>
+                        <input {...formik.getFieldProps('clubName')} className='min-w-full outline-none px-1' type="text" placeholder='Club Name' />
                     </div>
+                    <div className='border-2 min-w-full rounded-sm flex'>
+                        <input {...formik.getFieldProps('secretKey')} className='min-w-fit outline-none px-1 ' type={textType} placeholder='SecretKey' />
+                        <div className='bg-white'>
+                            <UilEye id="show" className="text-black hidden cursor-pointer" onClick={() => { changeEye("hide") }} />
+                            <UilEyeSlash className="text-black cursor-pointer " id="hidden" onClick={() => { changeEye("show") }} />
+                        </div>
+                    </div>
+                    <div className='flex border-2 max-w-fit rounded '>
+                        <button className='text-center text-white bg-green-500 py-2 px-5 rounded' type='submit'>Login</button>
+                    </div>
+                </form>
+                <div className='flex justify-center py-3 bg-blue-300  text-black font-bold  cursor-pointer' onClick={() => { navigate('/') }}
+                >
+                    Go Home
                 </div>
-                <div className='flex border-2 px-2 max-w-fit'>
-                    <button className='text-center' type='submit'>Login</button>
-                </div>
-            </form>
+            </div>
         </div>
     )
 }
