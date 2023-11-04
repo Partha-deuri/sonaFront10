@@ -38,6 +38,8 @@ const cards = [
   {
     id: 2,
     title: "Wealth from Waste",
+    limit:0,
+    count:100,
     image: h2,
     text: <><h3>Rules:</h3> <br></br>Materials will not be provided.<br></br>Participants must make their craft from waste materials only. <br></br>1 week will be given before the submission.<br></br>Glue will be provided.<br></br><br></br><h3>Prize:</h3><br></br> 1st :800<br></br> 2nd: 500</>,
   },
