@@ -42,7 +42,7 @@ const AdminCosplay = () => {
                 <td className='px-5 border-2 boder-black'>{items.email}</td>
                 <td className='px-5 border-2 boder-black'>{items.phone}</td>
                 <td className='px-5 border-2 boder-black'>{items.gender}</td>
-                <td className='px-5 border-2 boder-black'>{items.cosplayCharcter}</td>
+                <td className='px-5 border-2 boder-black'>{items.cosplayCharacter}</td>
                 <td className='p-5'>
                     <img src={items.paymentImg || ""} className=" mb-4 h-20" />
                 </td>
