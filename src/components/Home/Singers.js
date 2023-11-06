@@ -36,7 +36,7 @@ const singer = [
 
   {
     sl: 5,
-    Name: "NEELANJANA ROY",
+    Name: "NEELANJANA RAY",
     Day: "XX-11-2023",
     img: neela,
   },
