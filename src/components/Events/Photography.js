@@ -4,10 +4,10 @@ import p3 from '../assets/photography/p3.jpg'
 import p4 from '../assets/photography/p4.jpg'
 import p5 from '../assets/photography/p5.jpg'
 import p6 from '../assets/photography/p6.jpg'
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import  { Toaster } from 'react-hot-toast';
+import { getUserEvents } from '../helper/axiosHelper';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Preview from './Preview'
 
 

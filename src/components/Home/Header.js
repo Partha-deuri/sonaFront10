@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 
-import tr from '../assets/bg.png'
+// import tr from '../assets/bg.png'
 
 const ParticleBackground = () => {
   const particlesInit = async (main) => {

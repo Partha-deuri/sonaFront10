@@ -36,9 +36,9 @@ export default function Sonabyss() {
                                     <br></br>
                                     Wanna participate ?
                                   </p>
-                                  <button className='mt-4 rounded-md px-2 py-1 bg-[#E1306C] text-center cursor-default hover:bg-[#FD1D1D]'>
+                                  {/* <button className='mt-4 rounded-md px-2 py-1 bg-[#E1306C] text-center cursor-default hover:bg-[#FD1D1D]'>
                                       <Link className='but1 text-[#E19898] font-seminormal md:text-xl tracking-widest text-center bg-[#E1306C] hover:bg-[#FD1D1D] rounded-md py-1 px-1' to="/sonabyss/title">Register</Link>
-                                  </button>
+                                  </button> */}
                                  
 
                         </div>

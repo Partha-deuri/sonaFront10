@@ -39,13 +39,13 @@ export default  function Org() {
         window.scrollTo(0, 0);
       }, []);
     const navigate = useNavigate()
-   const sections = [secretary,eventManager,sonabyss,infoAndPub,jos,pubBranding,creativeHeads,girlsRe,
-    Auditor,volunteer,decoration,stagesIncharge,electricalIncharge,
+   const sections = [secretary,eventManager,infoAndPub,jos,pubBranding,creativeHeads,girlsRe,
+    Auditor,volunteer,decoration,stagesIncharge,electricalIncharge,sonabyss,
     quiz,writterForum,hobbyIncharge,drama,danceIncharge,elocutionIncharge,
     musicClub,photography,videography,gameIncharge,cosplay,
     attendance,hospityLity,refreshment,webdev]
-    const sectionTitles = ["RACAF HEADS","EVENT MANAGER","SONABYSS INCHARGES","Info and Pub","JOINT ORGANIZING SECRETARY","PUB AND BRANDING","CREATIVE HEADS","GIRLS REPRESENTATIVE",
-    "AUDITORS","CHIEF VOLUNTEER","DECORATION INCHARGES","STAGE INCHARGES","ELECTRICAL INCHARGES",
+    const sectionTitles = ["RACAF HEADS","EVENT MANAGER","Info and Pub","JOINT ORGANIZING SECRETARY","PUB AND BRANDING","CREATIVE HEADS","GIRLS REPRESENTATIVE",
+    "AUDITORS","CHIEF VOLUNTEER","DECORATION INCHARGES","STAGE INCHARGES","ELECTRICAL INCHARGES","SONABYSS INCHARGES",
     "QUIZ CLUB INCHARGES","WRITER'S FORUM","HOBBY CLUB INCHARGES","DRAMA CLUB INCHARGES","DANCE CLUB INCHARGES","ELOCUTION CLUB INCHARGES",
     "MUSIC CLUB INCHARGES","PHOTOGRAPHY CLUB INCHARGES","VIDEOGRAPHY CLUB INCHARGES","GAME ZONE INCHARGES","COSPLAY INCHARGES",
     "ATTENDANCE INCHARGES","HOSPITALITY INCHARGES","REFRESHMENT INCHARGES","WEB DEVELOPERS TEAM"]

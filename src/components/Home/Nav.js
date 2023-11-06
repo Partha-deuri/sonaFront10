@@ -1,8 +1,8 @@
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { logOutAll } from "../helper/axiosHelper";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 export default function Nav(){
 

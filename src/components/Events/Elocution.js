@@ -4,10 +4,10 @@ import elo2 from "../assets/elo2.jpg";
 import elo3 from "../assets/elo3.jpg";
 
 import { useEffect } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import  { Toaster } from 'react-hot-toast';
+import { getUserEvents } from '../helper/axiosHelper';
 import {  useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 import Preview from "./Preview";
 

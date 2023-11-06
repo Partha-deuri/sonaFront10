@@ -13,10 +13,10 @@ import h12 from "../assets/hobby/h12.jpg";
 import h13 from "../assets/hobby/h13.jpg";
 // import h14 from "../assets/hobby/h14.jpg";
 import h15 from "../assets/hobby/h15.jpg"
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserCount, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import{ Toaster } from 'react-hot-toast';
+import { getUserCount, getUserEvents } from '../helper/axiosHelper';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import caricature from "../assets/hobby/caricature.jpg"
 import Preview from './Preview';
 

@@ -2,11 +2,12 @@
 
 //materials for 3d //
 
-import rocket from "../assets/home/rocket.png"
+// import rocket from "../assets/home/rocket.png"
 
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+// import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera } from '@react-three/drei';
 import Monk from './Kyuko.jsx'
 import {Link} from 'react-router-dom'
 import Ufo from "./Ufo.jsx"

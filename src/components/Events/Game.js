@@ -1,16 +1,16 @@
 
-import duetDhamaka from '../assets/dance/duetDhamaka.jpg';
-import megaTaal from '../assets/dance/megaTaal.jpg';
-import soloStriker from '../assets/dance/SoloStriker.jpg';
-import Xerox from '../assets/dance/Xerox.jpg';
+// import duetDhamaka from '../assets/dance/duetDhamaka.jpg';
+// import megaTaal from '../assets/dance/megaTaal.jpg';
+// import soloStriker from '../assets/dance/SoloStriker.jpg';
+// import Xerox from '../assets/dance/Xerox.jpg';
 import Preview from './Preview';
 import { useState,useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { getUserEvents } from '../helper/axiosHelper';
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera } from '@react-three/drei';
-import Monk from "./M4.jsx";
+// import { Suspense } from 'react';
+// import { Canvas } from '@react-three/fiber';
+// import { PerspectiveCamera } from '@react-three/drei';
+// import Monk from "./M4.jsx";
 
 
 import bgmi from "../assets/bgmi.jpg";

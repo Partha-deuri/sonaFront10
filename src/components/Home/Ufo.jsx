@@ -23,6 +23,7 @@ export default function Model(props) {
 
 
   const { nodes, materials, animations } = useGLTF('/ufo.gltf')
+  // eslint-disable-next-line no-unused-vars
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null} scale={50}>

@@ -4,10 +4,10 @@ import w3 from '../assets/writer/Spill the ink.png'
 import w4 from '../assets/writer/Sasta critic.png'
 import w5 from '../assets/writer/Awaaz Do.png'
 
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import  { Toaster } from 'react-hot-toast';
+import { getUserEvents } from '../helper/axiosHelper';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Preview from './Preview'
 
 

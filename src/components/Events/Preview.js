@@ -10,8 +10,9 @@ const Preview = (props) => {
                 setSlots(false);
             }
         } else {
-            setSlots(true);
+            setSlots(true); 
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 

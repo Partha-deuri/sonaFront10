@@ -3,10 +3,10 @@ import v2 from '../assets/videography/v2.jpg'
 import v3 from '../assets/videography/v3.jpg'
 import v4 from '../assets/videography/v4.jpg'
 import v5 from '../assets/videography/v5.jpg'
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import  { Toaster } from 'react-hot-toast';
+import {  getUserEvents } from '../helper/axiosHelper';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Preview from './Preview'
 
 

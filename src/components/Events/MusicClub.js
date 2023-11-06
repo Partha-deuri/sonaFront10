@@ -1,8 +1,4 @@
 
-import duetDhamaka from '../assets/dance/duetDhamaka.jpg';
-import megaTaal from '../assets/dance/megaTaal.jpg';
-import soloStriker from '../assets/dance/SoloStriker.jpg';
-import Xerox from '../assets/dance/Xerox.jpg';
 
 import m1 from "../assets/m1.jpg";
 import m2 from "../assets/m2.jpg";

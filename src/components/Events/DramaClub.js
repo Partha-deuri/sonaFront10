@@ -2,10 +2,10 @@ import d1 from '../assets/drama/drama.jpg';
 import d2 from "../assets/drama/drama2.jpg";
 import d3 from "../assets/drama/drama3.jpg";
 import d4 from "../assets/drama/drama4.jpg";
-import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, getUserEvents, updateEvent, verifyToken } from '../helper/axiosHelper';
+import  { Toaster } from 'react-hot-toast';
+import {  getUserEvents } from '../helper/axiosHelper';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 import Preview from './Preview.js';
 
