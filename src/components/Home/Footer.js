@@ -7,7 +7,7 @@ import { Data } from "./sponsor.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { useNavigate } from "react-router-dom";
 
-import "swiper/css";
+import "swiper/css"; 
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
@@ -43,7 +43,7 @@ const Footer = () => {
             autoplay={{ delay: 1000 }}
             pagination={{ clickable: true }}
             modules={[FreeMode, Autoplay]}
-            className="min-w-[90%] lg:min-w-[80%]"
+            className="min-w-[90%] max-w-[90%] lg:min-w-[80%]"
           >
             {Data.map((item) => (
               <SwiperSlide key={item.id}>
