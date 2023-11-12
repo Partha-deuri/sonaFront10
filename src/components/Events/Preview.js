@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
-import { deletEvent, updateEvent, verifyToken } from '../helper/axiosHelper';
-import { useNavigate } from 'react-router-dom';
 const Preview = (props) => {
     const [slots, setSlots] = useState(true);
     useEffect(() => {
@@ -16,67 +14,8 @@ const Preview = (props) => {
     }, [])
 
 
-    const navigate = useNavigate();
-    const isRegistered = (title) => {
-        if (props.userEvents.indexOf(title) === -1) {
-            return false;
-        }
-        return true;
-    }
     const registerEvent = ({ currEvent, clubName }) => {
-        if (slots) {
-
-            const token = localStorage.getItem('token');
-            if (token) {
-                verifyToken(token);
-            }
-            if (!localStorage.loggedin) {
-                toast.error("Please log in first");
-                setTimeout(() => {
-                    navigate('/login');
-                }, 100);
-                // navigate(/'/login');    
-            } else {
-                if (!isRegistered(currEvent)) {
-
-                    let updatePromise = updateEvent({ currEvent, clubName })
-                    toast.promise(updatePromise, {
-                        loading: "updating",
-                        success: <b>Event Registered Successfully</b>,
-                        error: <b>Already Registered</b>
-                    })
-
-                    updatePromise.then((res) => {
-                        const { events } = res.data;
-                        let eventString = JSON.stringify(events);
-                        localStorage.setItem('events', eventString);
-                        props.setUserEvents([...props.userEvents, currEvent])
-                    }).catch(err => {
-                        console.log(err);
-                    })
-                }
-                else {
-                    let deletePromise = deletEvent({ currEvent, clubName })
-                    toast.promise(deletePromise, {
-                        loading: "updating",
-                        success: <b>Event Unregistered Successfully</b>,
-                        error: <b>Error</b>
-                    })
-
-                    deletePromise.then((res) => {
-                        const { events } = res.data;
-                        let eventString = JSON.stringify(events);
-                        localStorage.setItem('events', eventString);
-                        props.setUserEvents(events);
-                    }).catch(err => {
-                        console.log(err);
-                    })
-                }
-            }
-        }else{
-            toast.error("No more registration are accepted.");
-        }
-
+            toast.error("The Event has ended");
     }
     return (
         <div className='min-h-screen fixed inset-0 flex justify-center backdrop-blur items-center' >
@@ -109,7 +48,7 @@ const Preview = (props) => {
                         <button
                             onClick={() => registerEvent({ currEvent: props.title, clubName: props.clubName })}
                             className="rounded-full bg-neutral-900 py-3 mt-5 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
-                            {isRegistered(props.title) ? 'Unregister' : slots ? 'Register' : 'Registrations are closed'}
+                             Registrations are closed
                         </button>
 
                     </div>

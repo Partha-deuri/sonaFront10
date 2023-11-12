@@ -9,7 +9,8 @@ return(
         <div className="flex flex-col gap-10 items-center justify-center min-h-screen ">
 
 
-                    <h2 className="text-center">The page you are looking for does not exist</h2>
+                    <h2 className="text-center bg-blue-300 px-2 rounded-md">The Event has ended</h2>
+                    <h2 className="text-center my-5">The page you are looking for does not exist</h2>
 
 
                 <button className="text-center bg-orange-300 hover:bg-orange-500 text-xl text-white py-1 px-2 rounded-lg ">

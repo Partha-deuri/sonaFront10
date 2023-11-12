@@ -41,9 +41,9 @@ export default function Sonabyss() {
                To show us your costume register now.
             </p>
            
-            <button className='mt-4 rounded-md px-2 py-1 bg-[#FAF3E0] hover:bg-[#ffffff] text-center cursor-default'>
+            {/* <button className='mt-4 rounded-md px-2 py-1 bg-[#FAF3E0] hover:bg-[#ffffff] text-center cursor-default'>
                 <Link className='but1 text-[#E19898] font-seminormal md:text-xl tracking-widest text-center bg-[#FAF3E0] hover:bg-[#ffffff] rounded-md py-1 px-1' to="/sonabyss/cosplay">Register</Link>
-            </button>
+            </button> */}
 
 
           </div>

@@ -32,24 +32,7 @@ function Signup() {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: async values => {
-      if (values.password !== values.confirmPassword) {
-        toast.error("Password and Confirm Password are mismatched");
-      } else {
-
-        const { status } = await userNotExist({ email: values.email })
-        if (status === 201) {
-
-          window.localStorage.setItem('name', values.name);
-          window.localStorage.setItem('email', values.email);
-          window.localStorage.setItem('phone', values.phone);
-          window.localStorage.setItem('password', values.password);
-          window.localStorage.setItem('institute', neristian ? "NERIST" : "Outsider");
-          // localStorage.clear();
-          navigate('/verifyOtp');
-        } else {
-          toast.error('email is already in use')
-        }
-      }
+         return toast.error('The Event has ended');
     }
   })
     const changeEye = (task) => {

@@ -70,15 +70,15 @@ function App() {
       element: <Signup></Signup>
     },
 
-    {
-      path: '/forgot',
-      element: <Forgot />
-    },
+    // {
+    //   path: '/forgot',
+    //   element: <Forgot />
+    // },
 
-    {
-      path: '/verifyOtp',
-      element: <Verify />
-    },
+    // {
+    //   path: '/verifyOtp',
+    //   element: <Verify />
+    // },
 
     // admin
     {
@@ -111,18 +111,18 @@ function App() {
     },
     
     // mods
-    {
-      path: "/mod",
-      element: <ModVerify />
-    },
-    {
-      path: "/mod/events",
-      element: <ModEvents />
-    },
-    {
-      path: "/mod/events/:list",
-      element: <ModUsers />
-    },
+    // {
+    //   path: "/mod",
+    //   element: <ModVerify />
+    // },
+    // {
+    //   path: "/mod/events",
+    //   element: <ModEvents />
+    // },
+    // {
+    //   path: "/mod/events/:list",
+    //   element: <ModUsers />
+    // },
 
     {
       path: "*",
@@ -134,14 +134,14 @@ function App() {
       element: <Quiz></Quiz>
     },
 
-    {
-      path: '/sonabyss/cosplay',
-      element: <Cosplay></Cosplay>
-    },
-    {
-      path: '/sonabyss/title',
-      element: <Sona></Sona>
-    },
+    // {
+    //   path: '/sonabyss/cosplay',
+    //   element: <Cosplay></Cosplay>
+    // },
+    // {
+    //   path: '/sonabyss/title',
+    //   element: <Sona></Sona>
+    // },
 
     {
       path: '/dance/events',

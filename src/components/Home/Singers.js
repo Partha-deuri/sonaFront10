@@ -3,7 +3,7 @@ import naga from "../assets/singers/naga.jpg";
 import rocket from "../assets/home/rocket.png";
 import withnine from "../assets/singers/withnine.jpg";
 import djkarma from "../assets/djKarma.jpg";
-import neela from "../assets/singers/neelanjana.jpg";
+// import neela from "../assets/singers/neelanjana.jpg";
 
 const singer = [
   {
@@ -34,13 +34,13 @@ const singer = [
     img: djkarma,
   },
 
-  {
-    sl: 5,
-    Name: "NEELANJANA RAY",
-    Day: "XX-11-2023",
-    img: neela,
-  }, 
-];
+  // {
+  //   sl: 5,
+  //   Name: "NEELANJANA RAY",
+  //   Day: "XX-11-2023",
+  //   img: neela,
+  // }, 
+]; 
 
 export default function Singer() {
   return (

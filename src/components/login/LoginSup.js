@@ -33,31 +33,8 @@ function Login() {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: async values => {
-      let checkEmailPromise = verifyUserEmail({ email: values.email })
-      checkEmailPromise.then(res => {
-        const { status } = res;
-        if (status === 201) {
-          let loginPromise = loginUser({ email: values.email, password: values.password })
-          toast.promise(loginPromise, {
-            loading: 'Checking...',
-            success: <b>Login Successfully...!</b>,
-            error: <b>Password Not Match!</b>
-          });
 
-          loginPromise.then(res => {
-            let { token } = res.data;
-            localStorage.setItem('token', token);
-            localStorage.setItem('loggedin', true);
-            window.history.back();
-          }).catch(err => {
-
-          })
-        } else {
-          return toast.error("user doesn't exist");
-        }
-      }).catch(err => {
-        toast.error("ERROR!! User doesn't exist");
-      })
+      return toast.error("The event has ended");
     }
   })
   const changeEye = (task) => {
