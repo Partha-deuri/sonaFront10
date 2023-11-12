@@ -39,7 +39,7 @@ const singer = [
     Name: "NEELANJANA RAY",
     Day: "XX-11-2023",
     img: neela,
-  },
+  }, 
 ];
 
 export default function Singer() {
