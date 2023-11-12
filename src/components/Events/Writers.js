@@ -16,7 +16,7 @@ const cards = [
       id: 1,
       title: "Tale Weaver",
       image: w1,
-   
+    
      
     },
     {

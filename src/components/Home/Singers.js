@@ -34,6 +34,7 @@ const singer = [
     img: djkarma,
   },
 
+
 ];
 
 export default function Singer() {
