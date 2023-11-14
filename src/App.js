@@ -80,12 +80,12 @@ function App() {
     //   element: <Verify />
     // },
 
-    // admin
-    {
-      path: "/admin",
-      element: <AdminLogin />
-    },
-    {
+    /*admin
+   {
+    path: "/admin",
+     element: <AdminLogin />
+},
+  {
       path: "/admin/cosplay",
       element: <AdminCosplay />
     },
@@ -109,7 +109,7 @@ function App() {
       path: "/admin/clubs/:event/:users",
       element: <AdminEventUserList />
     },
-    
+    */
     // mods
     // {
     //   path: "/mod",
